@@ -1,1 +1,74 @@
 
+Qns 1. Write a python script to store multiple items in a single variable 
+( Items are “Java”, “Python”, “SQL”, “C” ) using tuple.
+
+t1=("Java","Python","css")
+print(t1)
+
+
+Qns 2. Write a python program to store only one item using tuple.
+
+t1=("java")
+print(t1)
+
+Qns 3. Write a python program to reverse the tuple.
+
+t1=(12,43,6,8,9,15)
+t2=reversed(t1)
+print(t2)
+
+Qns 4. Write a python program to Swap two tuples in Python.
+
+t1=(12,13,23,13,15,16)
+t2=(43,67,78,34,23)
+t2,t1=t1,t2
+print("swap value ",t1,t2)
+
+
+Qns 5. Write a python program to check if all items in the tuple are the same.
+
+t1=(12,13,14)
+t2=(12,13,14)
+print(t1==t2)
+
+
+Qns 6. Write a python program to divide the tuple into four variables. 
+tuple1=(100, 200, 300, 400).
+
+t1=(12,13,14)
+a,b,c=t1
+print("a=",a)
+print("b=",b)
+print("c=",c)
+
+
+Qns 7. Write a python program to copy elements 4 and 5 from the following tuple into a new tuple. tuple1=(1,2,3,4,5,6).
+
+
+t1=(1,2,3,4,5)
+t2=t1[3 :-1]
+print(t2)
+
+
+Qns 8. Write a python program to Sort a tuple of tuples by the second item.      tuple1 = (('a', 21),('b', 37),('c', 11), ('d',29))
+
+t1=(('a',2),('b',3),('c',5))
+t1=tuple(sorted(list(t1),key=lambda =x[1])
+print(t1)
+
+
+Qns 9. Write a python program to print the value 20 from given nested tuple
+tuple1 = ("Python", [10, 20, 30], (2, 4, 16))
+
+tuple1 = ("Python", [10, 20, 30], (2, 4, 16))
+print(tuple1[1][1])
+
+
+Qns 10. Write a python program to change the first item (22) of a list within the following tuple
+to 222.
+tuple1 = (11, [22, 33], 44, 55)
+
+
+t1 = (11, [22, 33], 44, 55)
+t1[1][0]=222
+print(t1)
