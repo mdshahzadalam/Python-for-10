@@ -1,1 +1,102 @@
 
+1. Comment the second paragraph element of the following HTML document?
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+<p>HTML Tutorial</p>
+<!--<p>Python Tutorial</p>-->
+<p>PHP Tutorial</p>
+</body>
+</html>
+
+
+
+2. Represent your residential address on HTML Document.
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+<p>At- Kako</p>
+<p>Dist - Jehanabad</p>
+<p>P.O. + P.S. - Kako</p>
+<p>State - Bihar</p>
+</body>
+</html>
+
+
+3. Convert your HTML document into music player 🎵
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</body>
+</html>
+
+
+4. Convert your HTML document into video player 📽
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</body>
+</html>
+
+5. Embed Python swap program in html document
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+<p>
+def factorial(n):
+	
+	return 1 if (n==1 or n==0) else n * factorial(n - 1);
+
+num = 5;
+print("Factorial of",num,"is",
+factorial(num))
+
+
+</p>
+</body>
+</html>
+
+
+10. Convert your HTML document into Phone Call Application.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <a href="tel:+05890000111">0-589-0000111</a>
+  </body>
+</html>
+
+
