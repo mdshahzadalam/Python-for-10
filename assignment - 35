@@ -1,1 +1,154 @@
 
+
+1. In the following shopping cart add, remove, edit itemsconst shoppingCart = ['Milk',
+'Coffee', 'Tea', 'Honey']
+a. add 'Meat' in the beginning of your shopping cart if it has not been already
+added
+b. add Sugar at the end of you shopping cart if it has not been already added
+c. remove 'Honey' if you are allergic to honey
+d. modify Tea to 'Green Tea'
+
+
+
+let shoppingCart=['Milk','Coffee','Tea','Honey']
+
+shoppingCart.splice(0,0,'Meat') // add 'Meat' in the beginning of your shopping cart if it has not been already added
+
+shoppingCart.push('Sugar') // add Sugar at the end of you shopping cart if it has not been already added
+
+shoppingCart.length=3; // remove 'Honey' if you are allergic to honey
+
+shoppingCart[2]='GreenTea' // modify Tea to 'Green Tea' 
+
+console.log(shoppingCart);
+
+
+2. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a
+CSS preprocess'. If it does not exist add Sass to the array and print the array.
+
+let webTech = ['Sass is a CSS preprocess']
+let i=[];
+if (webTech in i){
+    console.log(i);
+}else{
+    console.log(i+[webTech]);
+}
+
+
+
+3. The following is an array of 10 students ages:
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+Sort the array and find the min and max age
+Find the median age(one middle item or two middle items divided by two)
+Find the average age(all items divided by number of items)
+Find the range of the ages(max minus min)
+Compare the value of (min - average) and (max - average), use abs()
+method
+
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+//console.log(Math.min.apply(Math, ages)); // find the min age
+//console.log(Math.max.apply(Math, ages)); // find the main age
+//console.log(Math.min(...ages));  // second Method for find the min age 
+//console.log(Math.max(...ages)); // second Method for find the max age 
+
+//console.log(ages.sort()); //Sort the array and find the min and max age
+console.log(ages.reduce((a,b)=>a+b,0)/ages.length); // Find the average age(all items divided by number of items)
+
+
+4. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle
+and Amazon are big IT companies.
+
+const iTcomapnies = ["Facebook","Google","Microsoft","Apple","IBM","Oracle", ];
+const s= iTcomapnies.join(',') + "and Amazon are big IT companies.";
+console.log(s);
+
+
+5. Change each company name to uppercase one by one and print them out
+
+
+const iTcomapnies = ["Facebook","Google","Microsoft","Apple","IBM","Oracle","Amazon"];
+const upperCase = iTcomapnies.map(element => {
+    return element.toUpperCase();
+});
+
+console.log(upperCase);
+
+
+6. Develop a small script which generate any number of characters random id
+
+
+function randomId(l)
+{
+    var text = "";
+    var charList = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for(var i=0; i < l; i++ )
+{  
+    text += charList.charAt(Math.floor(Math.random() * charList.length));
+}
+    return text;
+}
+console.log(randomId(5));
+
+
+7. Write a script which generates a random hexadecimal number.
+
+
+const randomHexaDecimal = () => {
+    let n = (Math.random() * 0xfffff * 1000000).toString(16);
+    return '#' + n.slice(0, 6);
+  };
+  
+  console.log(randomHexaDecimal())
+  
+  
+  
+  8. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using
+loop without using a reverse method.
+
+
+const fruitArray= ['banana', 'orange', 'mango', 'lemon']
+for (var i = fruitArray.length -1; i>=0; i--) {
+    console.log(fruitArray[i]);
+}
+
+
+
+9. Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node",
+"Express", "MongoDB"] using a for loop or for of loop and print out the items.
+
+
+const proLang= ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+for ( let i = 0; i < proLang.length; i=i+1) {
+    console.log(proLang[i]);
+}
+
+
+10. Create a human readable time format using the Date time object
+a. YYYY-MM-DD HH:mm
+b. DD-MM-YYYY HH:mm
+c. DD/MM/YYYY HH:mm
+
+
+  function humanRedableTime3(num) {
+    return num.toString().padStart(2, '0');
+  }
+
+  function formateDate(date){
+    return [
+        humanRedableTime3(date.getDate()),
+        humanRedableTime3(date.getMonth()+1),
+        date.getFullYear(),
+    ].join('/') +
+    ' '+
+
+    [
+        humanRedableTime3(date.getHours()),
+        humanRedableTime3(date.getMinutes()),
+        //humanRedableTime3(date.getSeconds()), This step is optional 
+    ].join(':')
+    
+  }
+
+  // DD/MM/YYYY HH:mm 
+  console.log(formateDate(new Date())); 
